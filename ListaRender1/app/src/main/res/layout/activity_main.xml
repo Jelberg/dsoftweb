@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:typeface="sans"
+    android:layout_height="match_parent"
+    tools:context="com.example.elberg.listarender.MainActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_x="0dp"
+        android:layout_y="0dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="56dp"
+        android:layout_height="58dp"
+        android:layout_x="169dp"
+        android:layout_y="40dp"
+        android:clickable="true"
+        android:foregroundGravity="center"
+        android:src="@android:drawable/ic_menu_today"
+        app:elevation="0dp"
+        app:fabSize="mini" />
+
+    <ListView
+        android:id="@+id/lv_m05_listactivity"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="22dp"
+        android:layout_x="9dp"
+        android:layout_y="101dp"
+        android:typeface="sans"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="76dp">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="2dp"
+        android:layout_y="11dp"
+        android:gravity="center"
+        android:text="Esta semana"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+</AbsoluteLayout>
