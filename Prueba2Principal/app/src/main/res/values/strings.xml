@@ -2,18 +2,22 @@
     <string name="app_name">Prueba2Principal</string>
     <string name="action_settings">Settings</string>
 
-    <string name="_itm_m05_modify">Modificar</string>
-    <string name="_itm_m05_delete">Eliminar</string>
     <string name="_ttl_m05_activity">Actividad</string>
+    <string name="_itm_m05_delete">Eliminar</string>
+    <string name="_itm_m05_modify">Modificar</string>
     <string name="_ttl_m05_questiondeleteactivity">Confirmar</string>
     <string name="_tv_m05_thisweek">En esta semana</string>
 
     <!--     Dialogos modulo 5             -->
+    <string name="_dlg_m05_cancel">CANCELAR</string>
+    <string name="_dlg_m05_done">SI</string>
+    <string name="_dlg_m05_dateseleted">Seleccione fecha</string>
+    <string name="_dlg_m05_hourseleted">Seleccione hora</string>
     <string name="_tst_m05_messagedelete">Debe seleccionar un item de la lista para eliminar</string>
     <string name="_tst_m05_messagemodify">Debe seleccionar un item de la lista para modificar</string>
     <string name="_dlg_m05_quetiondeleteactivity">¿Desea realmente eliminar esta actividad?</string>
-    <string name="_dlg_m05_done">SI</string>
-    <string name="_dlg_m05_cancel">NO</string>
+
+
 
 
 </resources>

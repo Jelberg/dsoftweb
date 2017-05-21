@@ -25,6 +25,8 @@
         android:id="@+id/lv_m05_listactivity"
         android:layout_width="368dp"
         android:layout_height="match_parent"
+
+        android:listSelector="@drawable/selector_files"
         android:layout_alignLeft="@+id/editText"
         android:layout_alignStart="@+id/editText"
         android:layout_below="@+id/editText"
@@ -50,7 +52,7 @@
         app:fabSize="mini" />
 
     <TextView
-        android:id="@+id/tv_m05_date"
+        android:id="@+id/tv_m05_actualdate"
         android:layout_width="266dp"
         android:layout_height="wrap_content"
         android:layout_x="20dp"
