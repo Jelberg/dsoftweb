@@ -1,5 +1,6 @@
-package com.example.elberg.prueba2principal;
+package com.example.elberg.listarender;
 
+import android.graphics.drawable.Drawable;
 import android.widget.ImageView;
 
 import java.util.Date;
@@ -11,7 +12,6 @@ import java.util.Date;
 
 public class Activ {
 
-    private int idActivity;
     private int uptime;
     private String sportName ;
     private double metersActivity;
@@ -24,8 +24,7 @@ public class Activ {
     private String dateActivity;
     private ImageView imege;
 
-    public Activ() {
-    }
+
 
     // Usado para llenar el ListView de la ventana principal del modulo 5
 
@@ -40,13 +39,6 @@ public class Activ {
     }
 
 
-    public int getIdActivity() {
-        return idActivity;
-    }
-
-    public void setIdActivity(int idActivity) {
-        this.idActivity = idActivity;
-    }
 
     public int getUptime() {
         return uptime;

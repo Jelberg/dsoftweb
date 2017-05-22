@@ -18,14 +18,14 @@ import java.util.ArrayList;
 public class AdapterItem extends BaseAdapter {
 
     protected Activity _activity;
-    protected ArrayList<Activ> _items;
+    protected ArrayList<Activit> _items;
 
     /**
      * Constructor del AdapterItem
      * @param activity Actiidad que se le va a dartar el listView
      * @param items  Lista de intems de la clase actividad
      */
-    public AdapterItem (Activity activity, ArrayList<Activ> items) {
+    public AdapterItem (Activity activity, ArrayList<Activit> items) {
         this._activity = activity;
         this. _items = items;
     }
@@ -48,11 +48,11 @@ public class AdapterItem extends BaseAdapter {
 
     /**
      *
-     * @param activitys
+     * @param activities
      */
-    public void addAll(ArrayList<Activ> activitys) {
-        for (int i = 0; i < activitys.size(); i++) {
-            _items.add(activitys.get(i));
+    public void addAll(ArrayList<Activit> activities) {
+        for (int i = 0; i < activities.size(); i++) {
+            _items.add(activities.get(i));
         }
     }
 
@@ -95,7 +95,7 @@ public class AdapterItem extends BaseAdapter {
             v = inf.inflate(R.layout.item, null);
         }
 
-        Activ dir = _items.get(position);
+        Activit dir = _items.get(position);
 
         // Se llenan los TextView con los datos de para visualizar los items
 

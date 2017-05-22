@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="glassfish4">
+    <ANNOTATIONS>
+      <root url="file://$USER_HOME$/Documentos/LIBRERIAS/glassfish4" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/Documentos/LIBRERIAS/glassfish4" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$USER_HOME$/Documentos/LIBRERIAS/glassfish4" />
+    </JAVADOC>
+    <NATIVE>
+      <root url="file://$USER_HOME$/Documentos/LIBRERIAS/glassfish4" />
+    </NATIVE>
+    <SOURCES>
+      <root url="file://$USER_HOME$/Documentos/LIBRERIAS/glassfish4" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/Documentos/LIBRERIAS/glassfish4" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Documentos/LIBRERIAS/glassfish4" recursive="false" type="SOURCES" />
+  </library>
+</component>

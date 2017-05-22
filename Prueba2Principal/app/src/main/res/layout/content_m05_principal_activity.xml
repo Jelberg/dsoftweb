@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
 
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.elberg.prueba2principal.MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:context="com.example.elberg.prueba2principal.M05PrincipalActivity1"
+    tools:showIn="@layout/activity_m05_principal_activity">
 
 
     <android.support.v7.widget.Toolbar

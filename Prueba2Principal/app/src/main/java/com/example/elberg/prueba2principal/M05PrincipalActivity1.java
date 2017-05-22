@@ -1,46 +1,36 @@
 package com.example.elberg.prueba2principal;
 
 import android.app.DatePickerDialog;
-import android.app.DialogFragment;
-import android.app.TimePickerDialog;
-import android.content.ClipData;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.SparseBooleanArray;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.TimePicker;
 import android.widget.Toast;
 
-import java.text.Format;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.SimpleTimeZone;
 
 /**
  * Se implementa como View.OnClickListener para accionar los Dialgos
  */
 
-public class MainActivity extends AppCompatActivity implements
+public class M05PrincipalActivity1 extends AppCompatActivity implements
         View.OnClickListener {
 
     Toolbar toolbar;
-    ArrayList<Activ> _activs = new ArrayList<Activ>();
+    ArrayList<Activit> _activits = new ArrayList<Activit>();
     ListView _listView;
-    ArrayAdapter<Activ> adaptador;
+    ArrayAdapter<Activit> adaptador;
     // Atributo para la posicion de la seleccion
     int selection;
 
@@ -64,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_m05_principal_activity);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         selectedElement();
@@ -86,7 +76,7 @@ public class MainActivity extends AppCompatActivity implements
 
         //Instanciamos el adaptador, le pasamos el arraylist y al listview la pasamos nuestro adapter
         // como adaptador de contenido
-        adaptador = new ArrayAdapter<Activ>(this, android.R.layout.simple_list_item_1, _activs);
+        adaptador = new ArrayAdapter<Activit>(this, android.R.layout.simple_list_item_1, _activits);
 
 
     }
@@ -126,11 +116,11 @@ public void listElement(){
     public void inflateActivitys() {
         //Aqui deberia haber un metodo que llene el ArrayList con los objetos
         //este add solo es una prueba para que se pueda ver ellist view personalizado
-        _activs.add(new Activ(12, "YOGA", 12.43, 34.34, "12-12-12"));
-        _activs.add(new Activ(12, "futbol", 12.43, 34.34, "12-12-12"));
-        _activs.add(new Activ(12, "tennis", 12.43, 34.34, "12-12-12"));
-        _activs.add(new Activ(12, "escala", 12.43, 34.34, "12-12-12"));
-        _listView.setAdapter(new AdapterItem(this, _activs));
+        _activits.add(new Activit(12, "YOGA", 12.43, 34.34, "12-12-12"));
+        _activits.add(new Activit(12, "futbol", 12.43, 34.34, "12-12-12"));
+        _activits.add(new Activit(12, "tennis", 12.43, 34.34, "12-12-12"));
+        _activits.add(new Activit(12, "escala", 12.43, 34.34, "12-12-12"));
+        _listView.setAdapter(new AdapterItem(this, _activits));
     }
 
 
@@ -143,7 +133,7 @@ public void listElement(){
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_m05_principal, menu);
         return true;
     }
 
@@ -242,26 +232,6 @@ public void listElement(){
                     }, _year, _month, _day);
             datePickerDialog.show();
         }
-        /*if (v == _fabChangeDate) {
-
-            // Get Current Time
-            final Calendar c = Calendar.getInstance();
-            _hour = c.get(Calendar.HOUR_OF_DAY);
-            _min = c.get(Calendar.MINUTE);
-
-            // Launch Time Picker Dialog
-            TimePickerDialog timePickerDialog = new TimePickerDialog(this,
-                    new TimePickerDialog.OnTimeSetListener() {
-
-                        @Override
-                        public void onTimeSet(TimePicker view, int hourOfDay,
-                                              int minute) {
-
-                            _tvdisplaydate.setText(hourOfDay + ":" + minute);
-                        }
-                    }, _hour, _min, false);
-            timePickerDialog.show();
-        }*/
     }
 
 
